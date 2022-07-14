@@ -1,13 +1,12 @@
 {
-  "chainId": "testing",
-  "chainName": "Juno Local",
-  "rpc": "http://localhost:26657/",
-  "rest": "http://localhost:1317/",
+  "chainId": "juno-1",
+  "chainName": "Juno",
+  "rpc": "https://rpc-juno.itastakers.com:443/",
+  "rest": "https://lcd-juno.itastakers.com:443/",
   "stakeCurrency": {
     "coinDenom": "JUNO",
     "coinMinimalDenom": "ujuno",
-    "coinDecimals": 6,
-    "coinGeckoId": "juno-network"
+    "coinDecimals": 6
   },
   "bip44": {
     "coinType": 118
@@ -26,11 +25,6 @@
       "coinMinimalDenom": "ujuno",
       "coinDecimals": 6,
       "coinGeckoId": "juno-network"
-    },
-    {
-      "coinDenom": "COSM",
-      "coinMinimalDenom": "ucosm",
-      "coinDecimals": 6
     }
   ],
   "feeCurrencies": [
@@ -43,9 +37,9 @@
   ],
   "coinType": 118,
   "gasPriceStep": {
-    "low": 0.025,
-    "average": 0.05,
-    "high": 0.1
+    "low": 0.0025,
+    "average": 0.01,
+    "high": 0.025
   },
-  "features": ["cosmwasm"]
+  "features": ["cosmwasm", "stargate", "ibc-transfer"]
 }
